@@ -30,14 +30,12 @@ The following operations are implemented to manipulate the stacks:
 - **`rrb` (reverse rotate b):** Shifts all elements of stack `b` downwards by one position. The last element becomes the first.
 - **`rrr`:** Performs `rra` and `rrb` simultaneously.
 
-## Project Structure
-- **`main.c`**: Entry point of the program, initializes stacks, and invokes sorting logic.
-- **`operations.c`**: Contains implementations of all stack operations.
-- **`sort.c`**: Implements the Turk Algorithm logic.
-- **`utils.c`**: Provides utility functions for stack management and error handling.
-- **`Makefile`**: Automates the build process.
-
 ## How to Build and Run
 1. Clone the repository.
    ```bash
-   git clone https://github.com/your-username/push_swap.git```
+   git clone https://github.com/your-username/push_swap.git
+   ```
+2. Navigate to the proyect directory.
+   `cd push_swap`
+3. Compile the program.
+   ```
