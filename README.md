@@ -5,7 +5,7 @@ This project implements the **Turk Algorithm** https://medium.com/@ayogun/push-s
 ## Features
 - Sorting a stack using an auxiliary stack.
 - Implementation of stack manipulation rules with minimal computational overhead.
-- Efficient sorting leveraging constraints on operations.
+- Efficient sorting leveraging constraints on operations (for a stack of 500 numbers the program succesfully sorts it in less than 5500 operations).
 
 ## Rules and Operations
 
