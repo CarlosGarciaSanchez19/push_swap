@@ -1,8 +1,8 @@
-# Push Swap: Implementing the Turk Algorithm
+# :fast_forward: :repeat: Push Swap: Implementing the Turk Algorithm
 
 This project implements the **Turk Algorithm** https://medium.com/@ayogun/push-swap-c1f5d2d41e97 to sort a stack (`a`) using an auxiliary stack (`b`). The algorithm applies a set of predefined operations to manipulate the stacks and achieve a sorted state for `a`. It also contains a `checker` useful to validate the instructions provided by the main program `push_swap`.
 
-## Features
+## :zap: Features :zap:
 - Sorting a stack using an auxiliary stack.
 - Implementation of stack manipulation rules with minimal computational overhead.
 - Efficient sorting leveraging constraints on operations (for a stack of 500 numbers the program succesfully sorts it in less than 5500 operations).
@@ -30,7 +30,7 @@ The following operations are implemented to manipulate the stacks:
 - **`rrb` (reverse rotate b):** Shifts all elements of stack `b` downwards by one position. The last element becomes the first.
 - **`rrr`:** Performs `rra` and `rrb` simultaneously.
 
-## How to Build and Run (Linux and UNIX)
+## How to Build and Run (Linux and UNIX) :rocket:
 1. Clone the repository.
    ```bash
    git clone https://github.com/your-username/push_swap.git
