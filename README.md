@@ -36,6 +36,11 @@ The following operations are implemented to manipulate the stacks:
    git clone https://github.com/your-username/push_swap.git
    ```
 2. Navigate to the proyect directory.
-   `cd push_swap`
+   ```cd push_swap
+   ```
 3. Compile the program.
+   ```make
+   ```
+4. Run the program, providing the stack to be sorted as arguments, e.g.
+   ```./push_swap 4 3 2 1
    ```
