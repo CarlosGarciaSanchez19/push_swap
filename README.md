@@ -1,6 +1,6 @@
 # Push Swap: Implementing the Turk Algorithm
 
-This project implements the **Turk Algorithm** to sort a stack (`a`) using an auxiliary stack (`b`). The algorithm applies a set of predefined operations to manipulate the stacks and achieve a sorted state for `a`.
+This project implements the **Turk Algorithm** to sort a stack (`a`) using an auxiliary stack (`b`). The algorithm applies a set of predefined operations to manipulate the stacks and achieve a sorted state for `a`. It also contains a `checker` useful to validate the instructions provided by the main program `push_swap`.
 
 ## Features
 - Sorting a stack using an auxiliary stack.
@@ -47,3 +47,13 @@ The following operations are implemented to manipulate the stacks:
    ```bash
    ./push_swap 4 3 2 1
    ```
+## Use the checker program
+1. Compile the checker.
+   ```bash
+   make bonus
+   ```
+2. Run the executable providing the stack to be sorted as arguments, e.g.
+   ```bash
+   ./checker 4 3 2 1
+   ```
+3. Insert the instructions as a list and when finished press `Ctrl + d` (the programm will be listening to stdin). If `OK` is displayed the stack has been sorted, if `KO` is displayed then the instructions provided do not sort the stack. If the arguments are other than numbers, if a number is repeated or if the instructions are not valid then an `Error` message will be displayed.
