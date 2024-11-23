@@ -30,7 +30,7 @@ The following operations are implemented to manipulate the stacks:
 - **`rrb` (reverse rotate b):** Shifts all elements of stack `b` downwards by one position. The last element becomes the first.
 - **`rrr`:** Performs `rra` and `rrb` simultaneously.
 
-## How to Build and Run
+## How to Build and Run (Linux and UNIX)
 1. Clone the repository.
    ```bash
    git clone https://github.com/your-username/push_swap.git
