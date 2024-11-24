@@ -6,7 +6,7 @@
 /*   By: carlosg2 <carlosg2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:06:25 by carlosg2          #+#    #+#             */
-/*   Updated: 2024/11/20 20:06:17 by carlosg2         ###   ########.fr       */
+/*   Updated: 2024/11/23 20:59:55 by carlosg2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,11 @@ typedef struct moves_stack
 }	t_mvs_s;
 
 long	ft_atoi(const char *str);
+int		ft_isdigit(int c);
+int		ft_arrsize(char **array);
+int		str_is_digit(char *str);
+char	**join_and_split(char **input);
+int		parse_input(char **input);
 char	*ft_strdup(const char *src);
 char	**ft_split(char const *str, char c);
 void	free_array(char **array, int arr_elements);

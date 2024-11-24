@@ -6,7 +6,7 @@
 /*   By: carlosg2 <carlosg2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 18:18:51 by carlosg2          #+#    #+#             */
-/*   Updated: 2024/11/20 20:17:02 by carlosg2         ###   ########.fr       */
+/*   Updated: 2024/11/23 20:42:58 by carlosg2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,7 +110,7 @@ void	sorting_first_phase(t_list **stack_a, t_list **stack_b)
 
 void	push_swap(t_list **stack_a, t_list **stack_b)
 {
-	if (!check_sorted_desc(*stack_a))
+	if (!check_sorted_desc(*stack_a) && ft_lstsize(*stack_a) > 1)
 	{
 		if (ft_lstsize(*stack_a) > 3)
 		{
