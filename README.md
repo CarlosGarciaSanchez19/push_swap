@@ -1,5 +1,9 @@
 # :fast_forward: Push Swap :repeat: : Implementing the Turk Algorithm
 
+<p align="center">
+<img src="push_swap_visualization.gif" alt="Push swap visualization sorting 500 random numbers">
+<p/>
+
 This project implements the **Turk Algorithm** https://medium.com/@ayogun/push-swap-c1f5d2d41e97 to sort a stack (`a`) using an auxiliary stack (`b`). The algorithm applies a set of predefined operations to manipulate the stacks and achieve a sorted state for `a`. It also contains a `checker` useful to validate the instructions provided by the main program `push_swap`.
 
 ## :zap: Features :zap:
