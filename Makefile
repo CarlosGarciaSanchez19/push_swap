@@ -6,7 +6,7 @@
 #    By: carlosg2 <carlosg2@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/29 19:41:56 by carlosg2          #+#    #+#              #
-#    Updated: 2024/11/28 12:23:42 by carlosg2         ###   ########.fr        #
+#    Updated: 2024/12/13 14:44:10 by carlosg2         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,29 +27,33 @@ BOBJS = $(BSRCS:.c=.o)
 CFLAGS = -Wall -Wextra -Werror -g
 
 %.o: %.c
-	cc $(CFLAGS) -c $(SRCS)
+	@cc $(CFLAGS) -c $(SRCS)
 
 $(NAME): $(OBJS)
-	ar rcs $(NAME).a $(OBJS)
-	cc $(CFLAGS) $(NAME).a -o $(NAME)
+	@ar rcs $(NAME).a $(OBJS)
+	@cc $(CFLAGS) $(NAME).a -o $(NAME)
+	@echo "push_swap compiled"
 
 all: $(NAME)
 
 $(BOBJS): $(BSRCS)
-	cc $(CFLAGS) -c $(BSRCS)
+	@cc $(CFLAGS) -c $(BSRCS)
 
 $(BNAME): $(NAME) $(BOBJS) checker.c
-	ar rcs libchecker.a $(BOBJS)
-	cc $(CFLAGS) checker.c $(NAME).a libchecker.a -o checker
+	@ar rcs libchecker.a $(BOBJS)
+	@cc $(CFLAGS) checker.c $(NAME).a libchecker.a -o checker
+	@echo "checker compiled"
 
 bonus: $(BNAME)
 
 clean:
-	rm -f $(OBJS) $(BOBJS) checker.o
+	@rm -f $(OBJS) $(BOBJS) checker.o
+	@echo "Objects removed"
 
 fclean: clean
-	rm -f $(NAME).a libchecker.a
-	rm -f $(NAME) checker
+	@rm -f $(NAME).a libchecker.a
+	@rm -f $(NAME) checker
+	@echo "Executables removed"
 
 re: fclean all
 
